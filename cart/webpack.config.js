@@ -8,10 +8,10 @@ module.exports = {
     },
     plugins: [
         new ModuleFederationPlugin({
-            name: 'cart',
+            name: 'cartModule',
             filename: 'remoteEntry.js',
             exposes: {
-                './CartShow': './src/index.js'
+                './CartShow': './src/bootstrap.js'
             },
             shared: {
                 faker: {
